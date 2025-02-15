@@ -1,8 +1,10 @@
 from flask import Flask, request, send_file
+from flask_cors import CORS  # Import CORS
 import PyPDF2
 import os
 
 app = Flask(__name__)
+CORS(app)  # Enable CORS for all routes
 
 @app.route("/", methods=["GET"])
 def home():
