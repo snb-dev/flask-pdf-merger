@@ -1,24 +1,19 @@
 Flask PDF Merger
 
-Flask PDF Merger is a simple web application that allows users to upload multiple PDF files and merge them into a single PDF document.
+A lightweight, web-based tool built with Python and Flask that allows users to seamlessly merge multiple PDF files into one.
 
-🔥Features
-- Upload multiple PDF files
-- Merge PDFs in the selected order
-- Download the merged PDF
-- Lightweight and easy-to-use interface
+🚀 Features
+* **Multi-file Upload:** Select and upload several PDF files simultaneously.
+* **Instant Merging:** Fast server-side processing using the PyPDF2 library.
+* **Secure Processing:** Files are processed and cleared from the server to ensure privacy.
+* **Responsive UI:** Simple and clean interface built with HTML/CSS.
 
-⚙️Technologies Used
-- Python
-- Flask
-- PDF processing library (Python-based)
+🛠️ Tech Stack
+* **Backend:** Python, Flask
+* **PDF Processing:** PyPDF2
+* **Frontend:** HTML5, CSS3
 
-💪Use Case
-This project showcases file handling, backend processing, and utility-based web application development using Flask.
-
-💁‍♂️Installation
-1. Clone the repository  
-2. Install required Python packages  
-3. Run the Flask server  
-4. Access the app via browser
-
+📦 Installation & Setup
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/snb-dev/flask-pdf-merger.git](https://github.com/snb-dev/flask-pdf-merger.git)
