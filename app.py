@@ -19,8 +19,8 @@ _hits = defaultdict(deque)
 
 
 def _client_ip():
-    """The caller's address as the edge saw it. CF-Connecting-IP and the first
-    X-Forwarded-For entry are whatever the caller typed, so neither is read."""
+    """The caller's address as the edge saw it. Cloudflare overwrites True-Client-IP
+    with the real one; the first X-Forwarded-For entry is whatever the caller typed."""
     if request.headers.get("True-Client-IP"):
         return request.headers["True-Client-IP"].strip()
     forwarded = [p.strip() for p in request.headers.get("X-Forwarded-For", "").split(",") if p.strip()]
